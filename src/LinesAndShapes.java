@@ -9,17 +9,30 @@ public class LinesAndShapes extends DrawableAdapter {
 	}
 	
 	public void draw (Graphics g){
-		g.drawLine(100, 75, 260, 75);
-		g.drawLine(300, 50, 400, 100);
+		int x=0;
+		int y=4;
+		g.setColor(Color.ORANGE);
+		g.fillRect(0, 0, 500, 600);
+		while(x<600) {
+			Color lightorange = new Color(242, 159, y);
+			g.setColor(lightorange);
+			g.fillRect(0, x, 500, 30);
+			y+=10;
+			x+=30;
+		}
+		g.setColor(Color.YELLOW);
+		g.fillArc(0,300, 500, 475, 0, 180);
+		g.setColor(Color.pink);
+		Font myFont = new Font("Noteworthy",Font.PLAIN, 50);
+		g.setFont(myFont);
+		g.drawString("SET Designs", 125, 400);
+		g.setColor(Color.white);
+		g.fillOval(380, 90, 100, 75);
+		g.fillOval(370, 130, 100, 75);
+		g.fillOval(350, 110, 100, 75);
+		g.fillOval(410, 110, 100, 75);
 		
-		g.setColor(Color.DARK_GRAY);
-		g.drawRect(100, 170, 100, 600);
-		g.fillRect(280, 170, 150, 140);
-		
-		g.setColor(Color.RED);
-		g.drawOval(55, 300, 180, 80);
-		g.setColor(Color.BLUE);
-		g.fillOval(280, 300, 100, 100);
+		g.fillOval(410, 110, 100, 75);
 	}
 
 }
