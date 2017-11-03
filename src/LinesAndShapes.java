@@ -32,7 +32,10 @@ public class LinesAndShapes extends DrawableAdapter {
 		g.fillOval(350, 110, 100, 75);
 		g.fillOval(410, 110, 100, 75);
 		
-		g.fillOval(410, 110, 100, 75);
+		g.fillOval(30, 300, 100, 75);
+		g.fillOval(10, 280, 100, 75);
+		g.fillOval(20, 260, 100, 75);
+		g.fillOval(50, 280, 100, 75);
 	}
 
 }
